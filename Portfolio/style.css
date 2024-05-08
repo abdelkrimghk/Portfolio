@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+.platform{
+    position: relative;
+    transition:right 0.3s;
+}
+.body{background-color:white !important;}
+
+
+.visite-btn
+{
+    border: 2px solid #333;
+    padding:10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+nav {
+  margin-top: 20px;
+  background-color: #fff;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  transform: translate(50%, 0);
+}
+
+.nav-link {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#me {
+  font-weight: bold;
+  color: #d13636;
+}
+
+.nav-link:hover {
+  color: #666;
+}
+
+
+  
+.upper-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 69vh; /* Adjusted height for better visibility */
+    position: relative; /* Ensure positioning context */
+}
+
+.main-title {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 2; /* Ensure title is above background shapes */
+}
+
+.main-title h1 {
+    font-size: 48px; /* Increased font size */
+    font-weight: 600; /* Increased font weight */
+    color: #f0f0f0;
+}
+
+.small {
+    max-width: 600px; /* Adjusted width for better readability */
+    padding-left: 100px;
+}
+
+.small small {
+    font-weight: 300;
+    color: #fff;
+}
+
+.table {
+    position: absolute;
+    top: 10%;
+    background-color: lightgrey;
+    right: 15%; /* Adjusted position to right */
+    transform: translateY(-50%); /* Center vertically */
+    display: inline-block;
+    padding: 60px; /* Increased padding */
+    border-radius: 50%; /* Changed to circle shape */
+    overflow: hidden;
+    animation: rotateShapes 10s infinite linear; /* Added animation */
+}
+
+.table img {
+    width: 250px; /* Increased image size */
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Background shapes */
+.table .background-shape {
+    position: absolute;
+    background-color: #5c43eb;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.table .background-shape:nth-child(2) {
+    top: -80px;
+    left: -80px;
+    animation: moveShape1 8s infinite ease-in-out alternate; /* Added animation */
+}
+
+.table .background-shape:nth-child(3) {
+    bottom: -80px;
+    right: -80px;
+    animation: moveShape2 7s infinite ease-in-out alternate; /* Added animation */
+}
+
+/* Additional shapes */
+.main-title::before,
+.main-title::after {
+    content: '';
+    position: absolute;
+    background-color: #4CAF50; /* Green color */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.main-title::before {
+    top: 30%;
+    left: -50px;
+}
+
+.main-title::after {
+    bottom: 30%;
+    right: -50px;
+}
+
+/* Keyframes for animations */
+@keyframes rotateShapes {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moveShape1 {
+    from {
+        transform: translate(-20px, -20px);
+    }
+    to {
+        transform: translate(20px, 20px);
+    }
+}
+
+@keyframes moveShape2 {
+    from {
+        transform: translate(20px, 20px);
+    }
+    to {
+        transform: translate(-20px, -20px);
+    }
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #20c997;
+  color: #f0f0f0;
+  padding: 40px;
+}
+
+.content {
+  width: 65%;
+}
+
+.content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.computer-container {
+  width: 30%;
+}
