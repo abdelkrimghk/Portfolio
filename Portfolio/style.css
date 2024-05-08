@@ -216,3 +216,81 @@ nav {
 .computer-container {
   width: 30%;
 }
+
+/* Styles for screens smaller than or equal to 768px (mobile devices) */
+@media (max-width: 768px) {
+  /* Adjust navigation */
+  nav {
+    width: 100%;
+    transform: none;
+  }
+
+  .navlinks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navlinks li {
+    margin: 10px 0;
+  }
+
+  /* Adjust main content */
+  .upper-content {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .main-title {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .small {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .table {
+    position: static;
+    transform: none;
+    margin: 20px auto;
+  }
+
+  /* Adjust project gallery */
+  .gallery {
+    width: 100%;
+    height: auto;
+  }
+
+  .each-frame {
+    height: auto;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .sub {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .sub img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  /* Adjust CV section */
+  #cv .container {
+    padding: 20px;
+  }
+
+  /* Adjust footer */
+  footer {
+    padding: 20px;
+  }
+}
