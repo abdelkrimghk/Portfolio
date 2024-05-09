@@ -262,27 +262,96 @@ nav {
 
   /* Adjust project gallery */
   .gallery {
-    width: 100%;
-    height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      width: 100%;
+      height: auto;
   }
 
   .each-frame {
-    height: auto;
+      height: auto;
   }
 
   .main {
-    flex-direction: column;
+      flex-direction: column;
+      padding: 10px;
   }
 
   .sub {
-    width: 100% !important;
-    text-align: center;
+      width: 30% !important;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      text-align: center;
+      font-size: 14px;
+      font-family: sans-serif;
+      font-weight: 400;
   }
 
   .sub img {
-    max-width: 100%;
-    height: auto;
-    padding: 10px;
+      max-width: 20%;
+      height: auto;
+      padding: 10px;
+  }
+
+  .head {
+      font-size: 1.2rem;
+  }
+
+  .heading
+  {
+    padding: 0;
+  }
+
+  .long-text {
+      font-size: 0.9rem;
+      padding: 10px;
+  }
+
+  .visite-btn {
+      margin: 10px 0;
+  }
+
+  .top {
+     width: 30%;
+  }
+
+  /* New rules for navigation buttons */
+  .buttons {
+      margin: 10px auto;
+      width: 90%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .buttons svg {
+      width: 30px;
+      height: 30px;
+  }
+
+  .head {
+      font-size: 1.2rem; /* Adjust font size for headings */
+  }
+
+  
+
+  .long-text {
+      font-size: 0.9rem; /* Adjust font size for long text */
+      padding: 10px;
+  }
+
+  .visite-btn {
+      margin: 10px 0;
+      font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .goto {
+      display: block;
+      margin: 10px auto;
   }
 
   /* Adjust CV section */
