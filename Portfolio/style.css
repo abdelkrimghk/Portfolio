@@ -88,9 +88,9 @@ nav {
 
 .table {
     position: absolute;
-    top: 10%;
+    top: 6%;
     background-color: lightgrey;
-    right: 15%; /* Adjusted position to right */
+    right: 10%; /* Adjusted position to right */
     transform: translateY(-50%); /* Center vertically */
     display: inline-block;
     padding: 60px; /* Increased padding */
@@ -189,6 +189,52 @@ nav {
   display: none;
 }
 
+.social-links
+{
+  position: absolute;
+  bottom: 0;
+  background-color: #333;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.social-titl
+{
+  color: #fff;
+}
+
+.social-links ul
+{
+  margin-left: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links ul li
+{
+  margin-right: 7rem;
+  
+}
+
+.social-links ul li a
+{
+  color:#fff;
+  font-family: sans-serif;
+  font-weight: 550;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    position: fixed;
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+    box-shadow: none; /* Remove box-shadow on smaller screens */
+  }
+
+  .social-links ul li {
+    margin-right: 0.5rem; /* Reduce margin for smaller screens */
+  }
+}
 
 
 .about-me {
